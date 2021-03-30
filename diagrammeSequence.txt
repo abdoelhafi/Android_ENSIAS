@@ -1,0 +1,14 @@
+@startuml
+User -> App: ouvrir l'application 
+App --> User: Interface de connexion/inscription
+
+User --> App: envoyer les donnes d'utilisateur
+App --> Database: valider / enregistrer les donnees d'authentification
+Database --> App : renvoyer les donnes de l'utilisateur
+App --> User : afficher le tableau de bord
+
+User -> App: ajouter une transaction 
+App --> Database: enregistrer les donnees du transaction
+Database --> App : renvoyer un accusé de succes
+App --> User : afficher le tableau de bord mis à jour.
+@enduml
