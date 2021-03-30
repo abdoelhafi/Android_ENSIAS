@@ -1,0 +1,42 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+title Use Case Diagram 
+
+rectangle MoneyTrackerApp{
+
+actor user
+usecase (Login) as uc1
+usecase (add a balance) as uc2
+usecase (update a balance) as uc4
+usecase (add a transaction) as uc3
+
+usecase (delete a transaction) as uc5
+usecase (update a transaction) as uc6
+usecase (consult statistiques) as uc7
+
+user--uc1
+user--uc2
+user--uc3
+user--uc5
+user--uc6
+user--uc4
+user--uc7
+
+
+
+:uc1: -d.> (Register) : include
+:uc2: -d.> (Register) : include
+:uc3: -d.> (Register) : include
+:uc5: -d.> (Register) : include
+:uc6: -d.> (Register) : include
+:uc4: -d.> (Register) : include
+:uc7: -d.> (Register) : include
+}
+
+
+
+
+
+
+@enduml

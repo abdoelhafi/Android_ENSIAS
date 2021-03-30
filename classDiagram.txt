@@ -1,0 +1,32 @@
+@startuml
+
+title 	Money Manager App  - Class Diagram
+
+
+class User {
+  -Int id
+  -String username
+  -String password
+ 
+}
+class Transaction {
+  -Int id
+  -String type
+  -String description
+  -Date date
+  -double amount
+  
+}
+
+class Balance {
+  -Int id
+  -double initialAmount
+  -double currentAmount
+  -Date date
+  -String description
+}
+
+Balance "1,1" *-- "0,*" Transaction  : contains
+User "1,1" *-- "0,*" Balance  : contains
+
+@enduml
