@@ -77,12 +77,7 @@ public class BalanceFragment extends Fragment {
         mPieChart = view.findViewById(R.id.pie_chart);
         mPieChart.setUsePercentValues(true);
         mPieChart.getDescription().setEnabled(false);
-        mPieChart.setExtraOffsets(5, 5, 5, 5);
-        mPieChart.setDragDecelerationFrictionCoef(0.1f);
-        mPieChart.setDrawHoleEnabled(false);
-        mPieChart.setHoleColor(Color.WHITE);
-        mPieChart.setTransparentCircleRadius(61f);
-        mPieChart.animateY(500, Easing.EasingOption.EaseInCubic);
+
 
         mPieChartValues = new ArrayList<>();
         mPieChartValues.add(new PieEntry(0f, getResources().getText(R.string.tab_expense).toString() + ", %"));
