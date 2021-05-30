@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.ensias.moneyManager.R;
+
 public class BrandActivity extends AppCompatActivity {
 
     @Override
@@ -21,6 +23,6 @@ public class BrandActivity extends AppCompatActivity {
                                     finish();
                                 }
                             }
-                ,7000 );
+                ,3000 );
     }
 }
